@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3001;
 
-app.get("/", (req, res) => res.type('html').send(html));
+// app.get("/", (req, res) => res.type('html').send(html));
 
 const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
@@ -59,3 +59,6 @@ const html = `
   </body>
 </html>
 `
+
+
+app.use(express.static('./apartment_manager_frontend/dist/apartment_manager_frontend/browser'));

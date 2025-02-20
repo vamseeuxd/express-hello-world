@@ -1,1 +1,21 @@
-<h1>Welcome to Apartment Manager</h1>
+<mat-drawer-container class="app-container" autosize>
+  <mat-drawer #drawer class="app-sidenav" mode="over">
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 01</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 02</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 03</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 04</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 05</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 06</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 07</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 08</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 09</button>
+    <button mat-button class="app-sidenav-button" (click)="drawer.toggle()">Menu - 10</button>
+  </mat-drawer>
+
+  <div class="app-sidenav-content">
+    <h1 style="color: #567ee3;">Welcome to Apartment Manager</h1>
+  </div>
+  <button mat-icon-button class="menu-toggle-button" (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-drawer-container>

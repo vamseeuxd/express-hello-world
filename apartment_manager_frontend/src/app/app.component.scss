@@ -1,4 +1,4 @@
-:host {
+/* :host {
   display: flex;
   width: 100vw;
   height: 100vh;
@@ -6,4 +6,36 @@
   align-items: center;
   color: #567ee3;
   text-align: center;
+}
+ */
+
+ .app-container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.app-sidenav-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-sidenav {
+  padding: 20px;
+  background: #eeeeee;
+}
+.menu-toggle-button{
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+.app-sidenav-button{
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: start;
 }
